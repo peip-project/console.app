@@ -3,6 +3,7 @@
     "description": "Main console application for PEIP",
     "type": "library",
     "license": "MIT",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Timo Michna",
@@ -11,7 +12,8 @@
     ],
     "require": {
         "peip/bootstrap": "^0.2.0",
-        "consolidation/robo": "^1.1"
+        "consolidation/robo": "^1.1",
+        "peip/contract.factory": "dev-master"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.8",
