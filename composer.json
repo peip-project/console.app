@@ -9,14 +9,19 @@
             "email": "timomichna@yahoo.de"
         }
     ],
+    "require": {
+        "peip/bootstrap": "^0.2.0",
+        "consolidation/robo": "^1.1"
+    },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.8"
+        "friendsofphp/php-cs-fixer": "^2.8",
+        "phpspec/phpspec": "^4.2"
     },
     "scripts": {
-        "fixer" : "vendor/bin/php-cs-fixer",
+        "fixer" : "php-cs-fixer",
         "cs": [
             "@composer install",
-            "@fixer"
+            "@fixer fix ./src"
         ],
         "clearCache": "rm -rf cache/*"
     }
