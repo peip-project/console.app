@@ -1,0 +1,23 @@
+{
+    "name": "peip/console.app",
+    "description": "Main console application for PEIP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timo Michna",
+            "email": "timomichna@yahoo.de"
+        }
+    ],
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.8"
+    },
+    "scripts": {
+        "fixer" : "vendor/bin/php-cs-fixer",
+        "cs": [
+            "@composer install",
+            "@fixer"
+        ],
+        "clearCache": "rm -rf cache/*"
+    }
+}
